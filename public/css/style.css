@@ -89,3 +89,4 @@ input[type="date"],input[type="month"],input[type="time"]{min-width:0;max-width:
 .site-credit{text-align:center;color:#8f786b;font-size:11px;padding:0 12px 90px}
 textarea{width:100%;min-height:80px;background:#302621;border:1px solid #584238;color:#f9f1e9;border-radius:11px;padding:10px 12px;font:inherit;resize:vertical}
 .stats{grid-template-columns:repeat(auto-fit,minmax(92px,1fr))}
+.period-ot table{min-width:0;width:100%}.period-ot th,.period-ot td{text-align:center}
