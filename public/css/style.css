@@ -73,3 +73,19 @@ input[type="date"],input[type="month"],input[type="time"]{min-width:0;max-width:
 .sleep-watch{width:min(83vw,70dvh,560px);height:min(83vw,70dvh,560px);aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;line-height:.85;border:clamp(7px,1.2vw,15px) solid #d4a788;box-shadow:inset 0 0 0 7px #16100e,0 0 0 7px #49372c,0 0 0 12px #211914,0 28px 60px #0009;background:radial-gradient(circle at 25% 20%,#f4ac78 0,#e46836 38%,#9b3025 78%,#551e1c 100%);text-shadow:0 7px 13px #61251c70;font-variant-numeric:tabular-nums}
 .sleep-hour,.sleep-minute{display:block;font-size:clamp(72px,19vw,180px);font-weight:800;letter-spacing:-.08em;padding-right:.08em}
 .sleep-minute{margin-top:.05em}.sleep-date{font-size:clamp(14px,3.4vw,26px);line-height:1.2;font-weight:700;margin-top:clamp(12px,3vh,28px);letter-spacing:.06em}.sleep-hint{color:#d9b39c;font-size:clamp(13px,2vw,18px);font-weight:500}
+
+/* Wider reports remain usable on narrow screens, with identifiers and row actions in view. */
+.report-wide{width:min(1180px,calc(100vw - 24px));margin-left:50%;transform:translateX(-50%)}
+.table-scroll{max-width:100%;overscroll-behavior-inline:contain;scrollbar-color:#72503d #211a17}
+.table-scroll table{min-width:980px}
+.table-scroll th:first-child,.table-scroll td:first-child{position:sticky;left:0;background:#251e1b;z-index:1}
+.table-scroll th:last-child,.table-scroll td:last-child{position:sticky;right:0;background:#251e1b;z-index:1}
+.report-head{flex-wrap:wrap;gap:12px;align-items:flex-start}
+.report-controls{flex-wrap:wrap;min-width:min(100%,560px)}
+.report-controls input,.report-controls select{min-width:130px;flex:1}
+.visibility-switch{display:flex;align-items:center;gap:8px;font-size:12px;color:#c0a697}
+.visibility-switch select{width:auto;min-width:190px}
+.readonly-notice{position:sticky;top:0;z-index:8;padding:10px 14px;text-align:center;background:#59452c;color:#ffe0a9;border-bottom:1px solid #987545;font-size:13px}
+.site-credit{text-align:center;color:#8f786b;font-size:11px;padding:0 12px 90px}
+textarea{width:100%;min-height:80px;background:#302621;border:1px solid #584238;color:#f9f1e9;border-radius:11px;padding:10px 12px;font:inherit;resize:vertical}
+.stats{grid-template-columns:repeat(auto-fit,minmax(92px,1fr))}
